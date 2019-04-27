@@ -1,4 +1,3 @@
-
 <ion-header>
   <ion-navbar>
     <ion-title>DASHBOARD ADMIN</ion-title>
@@ -9,15 +8,15 @@
 
   <ion-grid>
     <ion-row>
-      <ion-col><img src="/assets/imgs/bayar.png"></ion-col>
+      <ion-col><img src="/assets/imgs/bayar.png" (click) ="listtoko()"></ion-col>
       <ion-col><img src="/assets/imgs/bayar.png"></ion-col>
       <ion-col><img src="/assets/imgs/bayar.png"></ion-col>
     </ion-row>
 
     <ion-row>
       <ion-col><img src="/assets/imgs/lokasi.png" (click) ="listlokasi()"></ion-col>
-      <ion-col><img src="/assets/imgs/user.png"></ion-col>
-      <ion-col><img src="/assets/imgs/logo.png"></ion-col>
+      <ion-col><img src="/assets/imgs/user.png" (click) = "listuser()"></ion-col>
+      <ion-col><img src="/assets/imgs/logo.png" (click) = "listmerek()"></ion-col>
     </ion-row>
 
     <ion-row>

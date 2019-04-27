@@ -10,6 +10,15 @@ import { DashadminPage } from '../pages/dashadmin/dashadmin';
 import { ListlokasiPage } from '../pages/listlokasi/listlokasi';
 import { AddlokasiPage } from '../pages/addlokasi/addlokasi';
 import { EditlokasiPage } from '../pages/editlokasi/editlokasi';
+import { ListuserPage } from '../pages/listuser/listuser';
+import { AdduserPage } from '../pages/adduser/adduser';
+import { EdituserPage } from '../pages/edituser/edituser';
+import { ListmerekPage } from '../pages/listmerek/listmerek';
+import { AddmerekPage } from '../pages/addmerek/addmerek';
+import { EditmerekPage } from '../pages/editmerek/editmerek';
+import { ListtokoPage } from '../pages/listtoko/listtoko';
+import { AddtokoPage } from '../pages/addtoko/addtoko';
+import { EdittokoPage } from '../pages/edittoko/edittoko';
 
 
 @NgModule({
@@ -19,7 +28,16 @@ import { EditlokasiPage } from '../pages/editlokasi/editlokasi';
     DashadminPage,
     ListlokasiPage,
     AddlokasiPage,
-    EditlokasiPage
+    EditlokasiPage,
+    ListuserPage,
+    AdduserPage,
+    EdituserPage,
+    ListmerekPage,
+    AddmerekPage,
+    EditmerekPage,
+    ListtokoPage,
+    AddtokoPage,
+    EdittokoPage
       
   ],
   imports: [
@@ -33,7 +51,16 @@ import { EditlokasiPage } from '../pages/editlokasi/editlokasi';
     DashadminPage,
     ListlokasiPage,
     AddlokasiPage,
-    EditlokasiPage
+    EditlokasiPage,
+    ListuserPage,
+    AdduserPage,
+    EdituserPage,
+    ListmerekPage,
+    AddmerekPage,
+    EditmerekPage,
+    ListtokoPage,
+    AddtokoPage,
+    EdittokoPage
   
   ],
   providers: [

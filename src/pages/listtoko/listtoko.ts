@@ -1,12 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
-/**
- * Generated class for the ListtokoPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import { AddtokoPage } from '../../pages/addtoko/addtoko';
+import { EdittokoPage } from '../../pages/edittoko/edittoko';
 
 @IonicPage()
 @Component({
@@ -14,12 +9,27 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'listtoko.html',
 })
 export class ListtokoPage {
-
+  public note = {};
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad ListtokoPage');
+  }
+
+  addtoko(){
+    this.navCtrl.push(AddtokoPage); /*Pindah halaman*/
+    console.log("tombol Simpan di clik");
+  }
+
+  edittoko(){
+    this.navCtrl.push(EdittokoPage); /*Pindah halaman*/
+    console.log("tombol Simpan di clik");
+  }
+
+  deletetoko(){
+    console.log("tombol di clik");
+    alert("Note Terhapus"); 
   }
 
 }

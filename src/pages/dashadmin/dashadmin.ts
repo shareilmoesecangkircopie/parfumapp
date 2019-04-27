@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { ListlokasiPage } from '../../pages/listlokasi/listlokasi';
+import { ListuserPage } from '../../pages/listuser/listuser';
+import { ListmerekPage } from '../../pages/listmerek/listmerek';
+import { ListtokoPage } from '../../pages/listtoko/listtoko';
  
 
 
@@ -23,6 +26,19 @@ export class DashadminPage {
     console.log("tombol di clik");
   }
 
-  
+  listuser(){
+    this.navCtrl.push(ListuserPage); /*Pindah halaman*/
+    console.log("tombol di clik");
+  }
+
+  listmerek(){
+    this.navCtrl.push(ListmerekPage); /*Pindah halaman*/
+    console.log("tombol di clik");
+  }
+
+  listtoko(){
+    this.navCtrl.push(ListtokoPage); /*Pindah halaman*/
+    console.log("tombol di clik");
+  }
 
 }

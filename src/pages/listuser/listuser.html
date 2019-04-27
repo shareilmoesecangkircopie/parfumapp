@@ -1,15 +1,34 @@
-<!--
-  Generated template for the ListuserPage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
-<ion-header>
+ <ion-header>
   <ion-navbar>
-    <ion-title>listuser</ion-title>
+    <ion-title>LIST USER</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-
+  <button ion-button icon-start block (click) ="adduser()">
+    <ion-icon name="add-circle-outline"></ion-icon>
+      Tambah Data
+    </button>
+  
+    <ion-list>
+      <ion-list-header>
+        Daftar User
+      </ion-list-header>
+      <ion-item>Adri Flouren Timor. S
+  
+        <button ion-button clear item-end icon-start (click) ="edituser()">
+              <ion-icon name="create"></ion-icon>
+  
+        </button>
+  
+        <button ion-button color="danger" clear item-end icon-start (click) ="deleteuser()">
+              <ion-icon name="trash"></ion-icon>
+  
+        </button>
+  
+      </ion-item>
+      <ion-item>Uut</ion-item>
+      <ion-item>Uut</ion-item>
+  
+    </ion-list>
 </ion-content>

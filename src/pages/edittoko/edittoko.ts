@@ -1,12 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { ListtokoPage } from '../../pages/listtoko/listtoko';
 
-/**
- * Generated class for the EdittokoPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
 
 @IonicPage()
 @Component({
@@ -14,12 +9,18 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'edittoko.html',
 })
 export class EdittokoPage {
-
+  public note = {};
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad EdittokoPage');
+  }
+
+  updatenote(){
+    // Pindahkan halaman ke halaman Home, dari tombol save ke tombol tambah data
+    this.navCtrl.push(ListtokoPage);
+    console.log("tombol edit di click : "+this.note);
   }
 
 }
