@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>List Lokasi</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <button ion-button icon-start block (click) ="addlokasi()">
+    <ion-icon name="add-circle-outline"></ion-icon>
+      Tambah Data
+    </button>
+  
+    <ion-list>
+      <ion-list-header>
+        Daftar Lokasi Refile
+      </ion-list-header>
+      <ion-item>Pekabaru
+  
+        <button ion-button clear item-end icon-start (click) ="editlokasi()">
+              <ion-icon name="create"></ion-icon>
+  
+        </button>
+  
+        <button ion-button color="danger" clear item-end icon-start (click) ="deletelokasi()">
+              <ion-icon name="trash"></ion-icon>
+  
+        </button>
+  
+      </ion-item>
+      <ion-item>Padang</ion-item>
+      <ion-item>Jambi</ion-item>
+  
+    </ion-list>
+ 
+</ion-content>

@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { DashadminPage } from '../../pages/dashadmin/dashadmin';
  
+ 
 
 
 @Component({
@@ -19,5 +20,6 @@ export class HomePage {
     console.log("tombol di clik");
   }
    
+    
 
 }

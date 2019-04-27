@@ -1,0 +1,22 @@
+
+<ion-header>
+  <ion-navbar>
+    <ion-title>TAMBAH LOKASI</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <form (ngSubmit)="savenote()">
+    <ion-list>
+      <ion-item>
+        <ion-label stacked>Judul Data</ion-label>
+        <ion-input type="text" [(ngModel)]="note.judul" name="judul"></ion-input>
+      </ion-item>
+    </ion-list>
+    <button ion-button icon-start block type="submit">Save</button>
+  
+  </form>
+  
+  
+</ion-content>

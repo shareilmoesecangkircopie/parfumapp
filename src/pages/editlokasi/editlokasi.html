@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>EDIT LOKASI</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <form (ngSubmit)="updatenote()">
+    <ion-list>
+      <ion-item>
+        <ion-label stacked>Judul Data</ion-label>
+        <ion-input type="text" [(ngModel)]="note.judul" name="judul"></ion-input>
+      </ion-item>
+    </ion-list>
+    <button ion-button icon-start block type="submit">Update</button>
+  
+  </form>
+
+</ion-content>
