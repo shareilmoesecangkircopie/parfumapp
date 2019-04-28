@@ -19,7 +19,9 @@ import { EditmerekPage } from '../pages/editmerek/editmerek';
 import { ListtokoPage } from '../pages/listtoko/listtoko';
 import { AddtokoPage } from '../pages/addtoko/addtoko';
 import { EdittokoPage } from '../pages/edittoko/edittoko';
-
+import { ListprodukPage } from '../pages/listproduk/listproduk';
+import { AddprodukPage } from '../pages/addproduk/addproduk';
+import { EditprodukPage } from '../pages/editproduk/editproduk';
 
 @NgModule({
   declarations: [
@@ -37,7 +39,10 @@ import { EdittokoPage } from '../pages/edittoko/edittoko';
     EditmerekPage,
     ListtokoPage,
     AddtokoPage,
-    EdittokoPage
+    EdittokoPage,
+    ListprodukPage,
+    AddprodukPage,
+    EditprodukPage
       
   ],
   imports: [
@@ -60,7 +65,10 @@ import { EdittokoPage } from '../pages/edittoko/edittoko';
     EditmerekPage,
     ListtokoPage,
     AddtokoPage,
-    EdittokoPage
+    EdittokoPage,
+    ListprodukPage,
+    AddprodukPage,
+    EditprodukPage
   
   ],
   providers: [

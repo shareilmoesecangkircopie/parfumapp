@@ -1,12 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
-/**
- * Generated class for the EditprodukPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import { ListprodukPage } from '../../pages/listproduk/listproduk';
 
 @IonicPage()
 @Component({
@@ -14,12 +8,18 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'editproduk.html',
 })
 export class EditprodukPage {
-
+  public note = {};
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad EditprodukPage');
+  }
+
+  updatenote(){
+    // Pindahkan halaman ke halaman Home, dari tombol save ke tombol tambah data
+    this.navCtrl.push(ListprodukPage);
+    console.log("tombol edit di click : "+this.note);
   }
 
 }

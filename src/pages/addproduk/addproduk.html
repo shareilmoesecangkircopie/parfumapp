@@ -1,15 +1,20 @@
-<!--
-  Generated template for the AddprodukPage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
-<ion-header>
+ <ion-header>
   <ion-navbar>
-    <ion-title>addproduk</ion-title>
+    <ion-title>TAMBAH PRODUK</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
+
+  <form (ngSubmit)="savenote()">
+    <ion-list>
+      <ion-item>
+        <ion-label stacked>Judul Data</ion-label>
+        <ion-input type="text" [(ngModel)]="note.judul" name="judul"></ion-input>
+      </ion-item>
+    </ion-list>
+    <button ion-button icon-start block type="submit">Save</button>
+  
+  </form>
 
 </ion-content>
