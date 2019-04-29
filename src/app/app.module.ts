@@ -22,6 +22,19 @@ import { EdittokoPage } from '../pages/edittoko/edittoko';
 import { ListprodukPage } from '../pages/listproduk/listproduk';
 import { AddprodukPage } from '../pages/addproduk/addproduk';
 import { EditprodukPage } from '../pages/editproduk/editproduk';
+import { ListprovPage } from '../pages/listprov/listprov';
+import { AddprovPage } from '../pages/addprov/addprov';
+import { EditprovPage } from '../pages/editprov/editprov';
+import { ListkabPage } from '../pages/listkab/listkab';
+import { AddkabPage } from '../pages/addkab/addkab';
+import { EditkabPage } from '../pages/editkab/editkab';
+import { ListtransPage } from '../pages/listtrans/listtrans';
+import { AddtransPage } from '../pages/addtrans/addtrans';
+import { EdittransPage } from '../pages/edittrans/edittrans';
+import { DashuserPage } from '../pages/dashuser/dashuser';
+import { ListorderPage } from '../pages/listorder/listorder';
+import { AddorderPage } from '../pages/addorder/addorder';
+import { EditorderPage } from '../pages/editorder/editorder';
 
 @NgModule({
   declarations: [
@@ -42,8 +55,21 @@ import { EditprodukPage } from '../pages/editproduk/editproduk';
     EdittokoPage,
     ListprodukPage,
     AddprodukPage,
-    EditprodukPage
-      
+    EditprodukPage,
+    ListprovPage,
+    AddprovPage,
+    EditprovPage,
+    ListkabPage,
+    AddkabPage,
+    EditkabPage,
+    ListtransPage,
+    AddtransPage,
+    EdittransPage,
+    DashuserPage,
+    ListorderPage,
+    AddorderPage,
+    EditorderPage
+          
   ],
   imports: [
     BrowserModule,
@@ -68,7 +94,20 @@ import { EditprodukPage } from '../pages/editproduk/editproduk';
     EdittokoPage,
     ListprodukPage,
     AddprodukPage,
-    EditprodukPage
+    EditprodukPage,
+    ListprovPage,
+    AddprovPage,
+    EditprovPage,
+    ListkabPage,
+    AddkabPage,
+    EditkabPage,
+    ListtransPage,
+    AddtransPage,
+    EdittransPage,
+    DashuserPage,
+    ListorderPage,
+    AddorderPage,
+    EditorderPage
   
   ],
   providers: [

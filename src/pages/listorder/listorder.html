@@ -1,28 +1,28 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>LIST TRANSAKSI</ion-title>
+    <ion-title>LIST ORDER</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
 
-  <button ion-button icon-start block (click) ="addtrans()">
+  <button ion-button icon-start block (click) ="addorder()">
     <ion-icon name="add-circle-outline"></ion-icon>
       Tambah Data
     </button>
   
     <ion-list>
       <ion-list-header>
-        Daftar Toko
+        Daftar Order Refile
       </ion-list-header>
       <ion-item>Pekabaru
   
-        <button ion-button clear item-end icon-start (click) ="edittrans()">
+        <button ion-button clear item-end icon-start (click) ="editorder()">
               <ion-icon name="create"></ion-icon>
   
         </button>
   
-        <button ion-button color="danger" clear item-end icon-start (click) ="deletetrans()">
+        <button ion-button color="danger" clear item-end icon-start (click) ="deleteorder()">
               <ion-icon name="trash"></ion-icon>
   
         </button>
@@ -32,4 +32,5 @@
       <ion-item>Jambi</ion-item>
   
     </ion-list>
+
 </ion-content>

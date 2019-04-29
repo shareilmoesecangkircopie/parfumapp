@@ -1,12 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
-/**
- * Generated class for the ListtransPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import { AddtransPage } from '../../pages/addtrans/addtrans';
+import { EdittransPage } from '../../pages/edittrans/edittrans';
 
 @IonicPage()
 @Component({
@@ -14,12 +9,27 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'listtrans.html',
 })
 export class ListtransPage {
-
+  public note = {};
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad ListtransPage');
+  }
+
+  addtrans(){
+    this.navCtrl.push(AddtransPage); /*Pindah halaman*/
+    console.log("tombol Simpan di clik");
+  }
+
+  edittrans(){
+    this.navCtrl.push(EdittransPage); /*Pindah halaman*/
+    console.log("tombol Simpan di clik");
+  }
+
+  deletetrans(){
+    console.log("tombol di clik");
+    alert("Note Terhapus"); 
   }
 
 }

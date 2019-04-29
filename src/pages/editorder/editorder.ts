@@ -1,24 +1,24 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { ListtransPage } from '../../pages/listtrans/listtrans';
+import { ListorderPage } from '../../pages/listorder/listorder';
 
 @IonicPage()
 @Component({
-  selector: 'page-edittrans',
-  templateUrl: 'edittrans.html',
+  selector: 'page-editorder',
+  templateUrl: 'editorder.html',
 })
-export class EdittransPage {
+export class EditorderPage {
   public note = {};
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad EdittransPage');
+    console.log('ionViewDidLoad EditorderPage');
   }
 
   updatenote(){
     // Pindahkan halaman ke halaman Home, dari tombol save ke tombol tambah data
-    this.navCtrl.push(ListtransPage);
+    this.navCtrl.push(ListorderPage);
     console.log("tombol edit di click : "+this.note);
   }
 

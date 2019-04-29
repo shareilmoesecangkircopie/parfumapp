@@ -1,15 +1,35 @@
-<!--
-  Generated template for the AddtransPage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
   <ion-navbar>
-    <ion-title>addtrans</ion-title>
+    <ion-title>TAMBAH TRANSAKSI</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
+
+  <form (ngSubmit)="savenote()">
+    <ion-list>
+      <ion-item>
+        <ion-label stacked>Parfum Besar</ion-label>
+        <ion-input type="text" [(ngModel)]="note.judul1" name="judul1"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label stacked>Parfum Sedang</ion-label>
+        <ion-input type="text" [(ngModel)]="note.judul2" name="judul2"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label stacked>Parfum Kecil</ion-label>
+        <ion-input type="text" [(ngModel)]="note.judul3" name="judul3"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label stacked>Bonus</ion-label>
+        <ion-input type="text" [(ngModel)]="note.judul4" name="judul4"></ion-input>
+      </ion-item>
+    </ion-list>
+    <button ion-button icon-start block type="submit">Save</button>
+  
+  </form>
 
 </ion-content>

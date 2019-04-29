@@ -1,12 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
-/**
- * Generated class for the AddtransPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import { ListtransPage } from '../../pages/listtrans/listtrans';
 
 @IonicPage()
 @Component({
@@ -14,12 +8,18 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'addtrans.html',
 })
 export class AddtransPage {
-
+  public note = {};
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad AddtransPage');
+  }
+
+  savenote(){
+    // Pindahkan halaman ke halaman Home, dari tombol save ke tombol tambah data
+    this.navCtrl.push(ListtransPage);
+    console.log("tombol simpan di click : "+this.note);
   }
 
 }

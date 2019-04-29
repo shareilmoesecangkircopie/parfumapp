@@ -1,25 +1,25 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { ListtransPage } from '../../pages/listtrans/listtrans';
+import { ListprovPage } from '../../pages/listprov/listprov';
 
 @IonicPage()
 @Component({
-  selector: 'page-edittrans',
-  templateUrl: 'edittrans.html',
+  selector: 'page-addprov',
+  templateUrl: 'addprov.html',
 })
-export class EdittransPage {
+export class AddprovPage {
   public note = {};
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad EdittransPage');
+    console.log('ionViewDidLoad AddprovPage');
   }
 
-  updatenote(){
+  savenote(){
     // Pindahkan halaman ke halaman Home, dari tombol save ke tombol tambah data
-    this.navCtrl.push(ListtransPage);
-    console.log("tombol edit di click : "+this.note);
+    this.navCtrl.push(ListprovPage);
+    console.log("tombol simpan di click : "+this.note);
   }
 
 }
